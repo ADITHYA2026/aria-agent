@@ -674,9 +674,6 @@ cors_origins: list[str] = [
 
 ---
 
-Here's the complete replacement for your README's Contributing and License sections:
-
-```markdown
 ## 🤝 Contributing (With Owner's Permission Only)
 
 **Important**: ARIA is exclusively owned by **Adithya Prathi**. Contributions are welcome but require explicit permission.
