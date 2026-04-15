@@ -5,7 +5,7 @@ const API_BASE = import.meta.env.DEV ? '' : 'https://aria-agent-g2j5.onrender.co
 
 export function useAgent() {
   const [events, setEvents] = useState([]);
-  const [status, setStatus] = useState('idle'); // idle | running | done | error
+  const [status, setStatus] = useState('idle');
   const [sessionId, setSessionId] = useState(null);
   const [finalAnswer, setFinalAnswer] = useState(null);
   const [iteration, setIteration] = useState(0);
@@ -28,10 +28,17 @@ export function useAgent() {
     setSessionId(sid);
 
     const url = `${API_BASE}/api/stream/${sid}?task=${encodeURIComponent(task)}`;
+    console.log('Connecting to:', url);  // Debug log
+    
     const es = new EventSource(url);
     esRef.current = es;
 
+    es.onopen = () => {
+      console.log('EventSource connected');  // Debug log
+    };
+
     es.onmessage = (e) => {
+      console.log('Received:', e.data);  // Debug log
       try {
         const event = JSON.parse(e.data);
 
@@ -66,7 +73,8 @@ export function useAgent() {
       }
     };
 
-    es.onerror = () => {
+    es.onerror = (err) => {
+      console.error('EventSource error:', err);  // Debug log
       setStatus(prev => prev === 'running' ? 'error' : prev);
       es.close();
     };
