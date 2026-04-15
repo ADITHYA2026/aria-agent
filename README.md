@@ -674,24 +674,32 @@ cors_origins: list[str] = [
 
 ---
 
-## 🤝 Contributing
+Here's the complete replacement for your README's Contributing and License sections:
 
-We welcome contributions! Here's how you can help:
+```markdown
+## 🤝 Contributing (With Owner's Permission Only)
+
+**Important**: ARIA is exclusively owned by **Adithya Prathi**. Contributions are welcome but require explicit permission.
 
 ### Development Workflow
 
-1. **Fork the repository**
-2. **Create a feature branch**
+1. **Open an Issue First**
+   - Describe what you want to change
+   - Wait for owner's approval before starting work
+
+2. **Fork the repository** (for approved changes only)
+
+3. **Create a feature branch**
    ```bash
    git checkout -b feature/amazing-feature
    ```
 
-3. **Make your changes**
+4. **Make your changes**
    - Follow existing code style
    - Add comments for complex logic
    - Update documentation
 
-4. **Test your changes**
+5. **Test your changes**
    ```bash
    # Backend tests (if added)
    pytest backend/tests/
@@ -700,12 +708,19 @@ We welcome contributions! Here's how you can help:
    cd frontend && npm run lint
    ```
 
-5. **Commit with clear message**
+6. **Commit with clear message**
    ```bash
    git commit -m 'Add amazing feature: brief description'
    ```
 
-6. **Push and open Pull Request**
+7. **Push and open Pull Request** (owner will review)
+
+### Contribution Agreement
+
+By submitting a pull request, you agree that:
+- ✅ Your contribution becomes the exclusive property of Adithya Prathi
+- ✅ You waive all rights to the contributed code
+- ✅ You confirm the work is original
 
 ### Areas for Improvement
 
@@ -724,30 +739,62 @@ We welcome contributions! Here's how you can help:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see below:
+This project is under **exclusive ownership** of **Adithya Prathi**.
 
 ```
-MIT License
+ARIA Agent - Custom License
+Copyright (c) 2025 Adithya Prathi
 
-Copyright (c) 2025 ARIA Contributors
+All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permitted Uses (with explicit permission only):
+- Personal learning and study
+- Forking for personal use
+- Contributing improvements (becomes owner's property)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Prohibited Uses (strictly forbidden):
+- Commercial use of any kind
+- Redistribution or sublicensing
+- Public deployment without permission
+- Creating derivative works for distribution
+- Removing copyright notices
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+For permissions: adithyakumarprathi@gmail.com
+```
+
+**Unauthorized use, distribution, or modification is strictly prohibited.**
+
+---
+
+## 🙏 Acknowledgments
+
+- **Google** for Gemini 2.5 Flash and generous free tier
+- **Tavily** for search API with generous free tier
+- **FastAPI** for the excellent async framework
+- **React & Framer Motion** for the smooth UI experience
+- **Open Source Community** for the amazing tools
+
+---
+
+## 📞 Contact & Support
+
+- **Owner**: Adithya Prathi
+- **Email**: adithyakumarprathi@gmail.com
+- **GitHub**: [@ADITHYA2026](https://github.com/ADITHYA2026)
+- **Issues**: [GitHub Issues](https://github.com/ADITHYA2026/aria-agent/issues)
+
+---
+
+<div align="center">
+  <h3>Built with ◈ by Adithya Prathi</h3>
+  <p><i>Autonomous Research & Intelligence Agent</i></p>
+  
+  <br>
+  
+  [Report Bug](https://github.com/ADITHYA2026/aria-agent/issues) · 
+  [Request Feature](https://github.com/ADITHYA2026/aria-agent/issues) · 
+  [Star on GitHub](https://github.com/ADITHYA2026/aria-agent)
+</div>
 ```
 
 ---
