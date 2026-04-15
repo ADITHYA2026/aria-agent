@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback } from 'react';
 
-const API_BASE = 'http://localhost:8000';
+// Automatically uses localhost locally, and Render online
+const API_BASE = import.meta.env.DEV ? '' : 'https://aria-agent-g2j5.onrender.com';
 
 export function useAgent() {
   const [events, setEvents] = useState([]);
