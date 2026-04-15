@@ -141,7 +141,7 @@ export default function Home() {
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }} style={{ textAlign: 'center', marginTop: 40 }}>
           <div style={{ fontSize: 12, color: 'var(--text-dim)' }}>
-            Powered by <span style={{ color: 'var(--accent-light)', fontWeight: 600 }}>Groq</span> · llama-3.3-70b-versatile · Free tier
+            Powered by <span style={{ color: 'var(--accent-light)', fontWeight: 600 }}>Google</span> · Gemini 2.5-Flash · Free tier
           </div>
         </motion.div>
       </div>
