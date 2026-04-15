@@ -792,38 +792,5 @@ For permissions: adithyakumarprathi@gmail.com
   [Request Feature](https://github.com/ADITHYA2026/aria-agent/issues) · 
   [Star on GitHub](https://github.com/ADITHYA2026/aria-agent)
 </div>
-```
-
----
-
-## 🙏 Acknowledgments
-
-- **Google** for Gemini 2.5 Flash and generous free tier
-- **Tavily** for search API with generous free tier
-- **FastAPI** for the excellent async framework
-- **React & Framer Motion** for the smooth UI experience
-- **Open Source Community** for the amazing tools
-
----
-
-## 📞 Support & Contact
-
-- **Issues**: [GitHub Issues](https://github.com/ADITHYA2026/aria-agent/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/ADITHYA2026/aria-agent/discussions)
-- **Email**: adithyakumarprathi@gmail.com
-
----
-
-<div align="center">
-  <h3>Built with ◈ by ARIA Team</h3>
-  <p><i>Autonomous agents for everyone</i></p>
-  
-  <br>
-  
-  [Report Bug](https://github.com/ADITHYA2026/aria-agent/issues) · 
-  [Request Feature](https://github.com/ADITHYA2026/aria-agent/issues) · 
-  [Star on GitHub](https://github.com/ADITHYA2026/aria-agent)
-</div>
-```
 
 ---
