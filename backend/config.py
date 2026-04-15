@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     gemini_api_key: str
     tavily_api_key: str
     redis_url: str = "redis://localhost:6379"
-    cors_origins: str = "http://localhost:5173,http://localhost:3000"  # Changed to string
+    cors_origins: str = "http://localhost:5173,http://localhost:3000,https://*.vercel.app"
     max_iterations: int = 12
     model: str = "gemini-2.5-flash"
 
