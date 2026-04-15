@@ -766,7 +766,7 @@ SOFTWARE.
 
 - **Issues**: [GitHub Issues](https://github.com/ADITHYA2026/aria-agent/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/ADITHYA2026/aria-agent/discussions)
-- **Email**: aria-agent@example.com
+- **Email**: adithyakumarprathi@gmail.com
 
 ---
 
