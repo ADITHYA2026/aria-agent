@@ -27,9 +27,12 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# Handle CORS origins (works with both string and list)
+cors_origins = settings.get_cors_origins() if hasattr(settings, 'get_cors_origins') else settings.cors_origins
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins,
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -67,11 +70,11 @@ async def run_task(request: TaskRequest):
 @app.get("/api/stream/{session_id}")
 async def stream_task(
     session_id: str, 
-    task: str = Query(..., description="The task to execute")  # ← FIX: proper query param
+    task: str = Query(..., description="The task to execute")
 ):
     """SSE endpoint — streams agent events in real time."""
     return StreamingResponse(
-        event_stream(task, session_id),  # ← Now task is properly passed
+        event_stream(task, session_id),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
