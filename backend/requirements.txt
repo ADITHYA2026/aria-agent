@@ -6,3 +6,5 @@ httpx>=0.28.0
 redis[asyncio]>=5.2.0
 python-dotenv>=1.0.0
 groq>=0.13.0
+google-genai>=0.7.0
+tavily-python>=0.3.0
